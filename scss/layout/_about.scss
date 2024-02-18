@@ -1,0 +1,102 @@
+.about{
+    padding-top: 40px;
+    /* margin-left: 119px; */
+}
+.page-title{
+    text-transform: uppercase;
+    font-family: 'oswald';
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 69px;
+    text-align: start;
+}
+.page-title::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    display: block;
+    background: #329f5b;
+    margin-top: 5px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-content img{
+    border: 0;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+.about-message p{
+    text-align: center;
+    color: #333;
+    font-family: 'poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.48px;
+}
+
+.heading p{
+    text-transform: uppercase;
+    font-family: 'oswald';
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 69px;
+    text-align: center;
+}
+.heading p::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    display: block;
+    background: #329f5b;
+    margin: 5px auto 0px;
+}
+
+.img-section img{
+    width: 730px;
+    height: 486px;
+}
+.heading-content-p{
+    width: 674px;
+    height: 383px;
+    background: rgba(255, 255, 255, 70%);
+    padding: 56px 44px 0px 44px;
+    position: absolute;
+    transform: translate(518px, 152px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.heading-content{
+    display: flex;
+}
+.about-topic{
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 63px;
+}
+.about-desc{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 33px;
+}
+.btn-primary{
+    background: #329f5b;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 20px;
+    text-decoration: none;
+}
+.btn-learn-more{
+    padding-bottom: 68px;
+    padding-top: 18px;
+}

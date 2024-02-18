@@ -1,0 +1,62 @@
+.logo{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.links ul{
+    gap: 34px;
+}
+.header{
+    padding: 4px 30px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+
+    &.header-bg {
+        background-color: #fff;
+        
+
+        .nav-item a {
+            color: #333;
+        }
+
+       
+    }
+}
+
+.navbar-brand {
+    max-width: 150px;
+}
+
+
+.navbar-nav .nav-item .nav-link{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+}
+ul{
+    align-items: center;
+}
+.donate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    background: #329f5b;
+    gap: 5px;
+    padding: 12px 22px;
+}
+.donate-btn{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    border: 0;
+    background: #329f5b;
+}

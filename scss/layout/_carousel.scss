@@ -1,0 +1,43 @@
+.carousel-content .carousel-item {
+    height: 100vh;
+}
+
+
+.carousel-content .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+} 
+
+.carousel-content{
+    position: relative;
+}
+.carousel-content::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 25%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.30);
+    color: #fff;
+    z-index: 1;
+    padding-top: 28px;
+    padding-bottom: 22px;
+}
+
+.content h1{
+    font-family: 'Oswald';
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102px;
+    text-transform: uppercase;
+}

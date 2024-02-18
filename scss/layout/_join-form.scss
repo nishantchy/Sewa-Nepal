@@ -1,0 +1,43 @@
+.join-form{
+    background: rgba(102, 35, 130, 70%);
+    padding: 40px 0 50px;
+}
+.join-form input{
+    width: 100% ;
+    height: 48px;
+    border-radius: 0;
+}
+.message p{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'oswald';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: center;
+}
+.form-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 45px;
+}
+.form-input {
+    max-width: 340px;
+    width: 100%;
+}
+.btn button{
+    color: #fff;
+    background-color: #329f5b;
+    padding: 8px 40px;
+    border: 0;
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: uppercase;
+}
