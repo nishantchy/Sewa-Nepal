@@ -193,9 +193,12 @@ p {
   left: 0;
   width: 100%;
   background-color: transparent;
+  transition: background-color 0.6s ease-in-out;
 }
 .header.header-bg {
   background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  opacity: 0.98;
 }
 .header.header-bg .nav-item a {
   color: #333;
@@ -211,6 +214,7 @@ p {
   font-weight: 500;
   line-height: normal;
   color: #fff;
+  transition: color 0.6s ease-in-out;
 }
 
 ul {
