@@ -48,5 +48,12 @@
         -webkit-box-orient: vertical;  
         overflow: hidden;
     }
-    
+    @media(max-width:768px){
+        .events-ttl{
+            text-align: center;
+        }
+        .events-txt{
+            text-align: center;
+        }
+    }
 }

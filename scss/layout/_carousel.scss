@@ -41,3 +41,10 @@
     line-height: 102px;
     text-transform: uppercase;
 }
+.content{
+    transition: transform 800ms ease-in-out;
+    transform: translateX(400%);
+}
+.content.show{
+    transform: translateX(0);
+}
