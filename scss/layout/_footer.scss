@@ -1,0 +1,100 @@
+.container-lg{
+    max-width: 1326px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+}
+
+.footer{
+    background: rgba(102, 35, 130, 0.7);
+    
+    &-form{
+        .contact{
+            font-size: 28px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 39px;
+            padding-top: 129px;
+        }
+    }
+    &-name-email{
+        display: flex;
+        max-width: 480px;
+        gap: 21px;
+
+        input{
+            width: 250px;
+            border-radius: 0;
+            margin: auto;
+            font-size: 16px;
+            box-shadow: 1px 1px 0.8px 0.2px;
+        }
+
+    } 
+    &-message{
+        textarea{
+            width: 521px;
+            border-radius: 0;
+            margin: 42px auto;
+            font-size: 16px;
+            box-shadow: 1px 1px 0.8px 0.2px;
+        }
+    }  
+    &-send{
+        padding-bottom: 95px;
+    }  
+}
+.footer-info .footer-logo img{
+    width: 218px;
+    height: 151px;
+    margin-top: 50px;
+}
+
+.contact-details{
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .details{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        margin: 20px 0px;
+    }
+}
+.contact{
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 39px;
+    padding-top: 33px;
+}
+.footer-socials img{
+    height: 60px;
+    width: 40px;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.footer-map iframe{
+    width: 466px;
+    height: 480px;
+    padding-top: 80px;
+    padding-bottom: 55px ;
+}
+.footer-copyright{
+    text-align: center;
+    color: #fff;
+    padding: 15px 0px;
+    background: #333;
+    width: 100%;
+}
