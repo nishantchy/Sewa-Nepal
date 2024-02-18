@@ -453,7 +453,7 @@ ul {
 .banner {
   margin-top: 100px;
   position: relative;
-  background-image: url("../banner.jpg");
+  background-image: url("../../Assets/img/banner/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -474,7 +474,7 @@ ul {
 .banner::after {
   content: "";
   display: block;
-  background-image: url("../banner-rect.svg");
+  background-image: url("../../Assets/img/banner/banner-rect.svg");
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
