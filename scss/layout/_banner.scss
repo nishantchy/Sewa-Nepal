@@ -1,4 +1,4 @@
-.banner{
+.banner {
     margin-top: 100px;
     position: relative;
     background-image: url("../../Assets/img/banner/banner.jpg");
@@ -8,7 +8,8 @@
     padding: 60px 0;
     z-index: 1;
 }
-.banner::before{
+
+.banner::before {
     content: "";
     display: block;
     background: #000;
@@ -17,7 +18,8 @@
     inset: 0;
     z-index: -1;
 }
-.banner::after{
+
+.banner::after {
     content: "";
     display: block;
     background-image: url("../../Assets/img/banner/banner-rect.svg");
@@ -30,20 +32,36 @@
     top: 0;
     left: 0;
     z-index: -1;
+
+    @media (max-width:767px) {
+        content: none;
+    }
 }
 
-.banner-head{
+.banner-head {
     text-transform: uppercase;
     font-family: 'oswald';
     font-size: 46px;
     font-weight: 500;
     line-height: 69px;
     text-align: start;
+
+    @media (max-width:767px) {
+        color: #fff;
+        line-height: 38px;
+        font-size: 28px;
+    }
 }
 
-.banner-para{
+.banner-para {
     font-size: 23px;
     font-weight: 400;
     letter-spacing: 0.48px;
     margin-bottom: 16px;
+
+    @media (max-width:767px) {
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+    }
 }

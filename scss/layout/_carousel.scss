@@ -6,12 +6,13 @@
 .carousel-content .carousel-item img {
     height: 100%;
     object-fit: cover;
-} 
+}
 
-.carousel-content{
+.carousel-content {
     position: relative;
 }
-.carousel-content::after{
+
+.carousel-content::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -19,7 +20,7 @@
     opacity: 25%;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -33,18 +34,16 @@
     padding-bottom: 22px;
 }
 
-.content h1{
+.content h1 {
     font-family: 'Oswald';
     font-size: 68px;
     font-style: normal;
     font-weight: 700;
     line-height: 102px;
     text-transform: uppercase;
-}
-.content{
-    transition: transform 800ms ease-in-out;
-    transform: translateX(400%);
-}
-.content.show{
-    transform: translateX(0);
+
+    @media (max-width:767px) {
+        font-size: 35px;
+        line-height: 47px;
+    }
 }

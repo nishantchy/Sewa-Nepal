@@ -1,13 +1,19 @@
-.join-form{
+.join-form {
     background: rgba(102, 35, 130, 70%);
     padding: 40px 0 50px;
+
+    @media (max-width:767px) {
+        padding: 30px 0;
+    }
 }
-.join-form input{
-    width: 100% ;
+
+.join-form input {
+    width: 100%;
     height: 48px;
     border-radius: 0;
 }
-.message p{
+
+.message p {
     color: #fff;
     text-transform: uppercase;
     font-family: 'oswald';
@@ -16,20 +22,33 @@
     font-weight: 600;
     line-height: 51px;
     text-align: center;
+
+    @media (max-width:767px) {
+        font-size: 21px;
+        line-height: 30px;
+    }
 }
-.form-section{
+
+.form-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 35px;
     margin-top: 45px;
+
+    @media (max-width:767px) {
+        gap: 15px;
+        margin-top: 20px;
+    }
 }
+
 .form-input {
     max-width: 340px;
     width: 100%;
 }
-.btn button{
+
+.btn button {
     color: #fff;
     background-color: #329f5b;
     padding: 8px 40px;

@@ -1,4 +1,4 @@
-.container-lg{
+.container-lg {
     max-width: 1326px;
     display: flex;
     justify-content: center;
@@ -6,11 +6,11 @@
     gap: 78px;
 }
 
-.footer{
+.footer {
     background: rgba(102, 35, 130, 0.7);
-    
-    &-form{
-        .contact{
+
+    &-form {
+        .contact {
             font-size: 28px;
             font-weight: 400;
             text-transform: uppercase;
@@ -19,12 +19,13 @@
             padding-top: 129px;
         }
     }
-    &-name-email{
+
+    &-name-email {
         display: flex;
         max-width: 480px;
         gap: 21px;
 
-        input{
+        input {
             width: 250px;
             border-radius: 0;
             margin: auto;
@@ -32,37 +33,46 @@
             box-shadow: 1px 1px 0.8px 0.2px;
         }
 
-    } 
-    &-message{
-        textarea{
+    }
+
+    &-message {
+        textarea {
             width: 521px;
             border-radius: 0;
             margin: 42px auto;
             font-size: 16px;
             box-shadow: 1px 1px 0.8px 0.2px;
         }
-    }  
-    &-send{
+    }
+
+    &-send {
         padding-bottom: 95px;
-    }  
+    }
 }
-.footer-info .footer-logo img{
+
+.footer-info .footer-logo img {
     width: 218px;
     height: 151px;
     margin-top: 50px;
 }
 
-.contact-details{
-    img{
+.contact-details {
+    img {
         width: 30px;
         height: 30px;
     }
-    p{
+
+    p {
         font-size: 18px;
         font-weight: 400;
         color: #fff;
+
+        @media (max-width:767px) {
+            font-size: 16px;
+        }
     }
-    .details{
+
+    .details {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -70,7 +80,8 @@
         margin: 20px 0px;
     }
 }
-.contact{
+
+.contact {
     font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
@@ -78,7 +89,8 @@
     margin-bottom: 39px;
     padding-top: 33px;
 }
-.footer-socials img{
+
+.footer-socials img {
     height: 60px;
     width: 40px;
     gap: 15px;
@@ -88,13 +100,15 @@
 .footer-map {
     max-width: 500px;
 }
-.footer-map iframe{
+
+.footer-map iframe {
     width: 100%;
     height: 480px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.footer-copyright{
+
+.footer-copyright {
     text-align: center;
     color: #fff;
     padding: 15px 0px;
@@ -104,51 +118,62 @@
 
 
 @media (max-width:768px) {
-    .container-lg{
+    .container-lg {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .contact{
+
+    .contact {
         text-align: center;
     }
-    .footer-form .contact{
+
+    .footer-form .contact {
         margin-bottom: 50px;
         padding-top: 40px;
         text-align: center;
     }
-    .footer-socials img{
+
+    .footer-socials img {
         margin-bottom: 0px;
     }
-    .footer-map iframe{
+
+    .footer-map iframe {
         padding-top: 0px;
         padding-bottom: 20px;
         height: 300px;
     }
-    .footer-socials{
+
+    .footer-socials {
         justify-content: center;
         align-items: center;
     }
-    .footer-name-email{
+
+    .footer-name-email {
         flex-direction: column;
     }
-    .footer-message textarea{
+
+    .footer-message textarea {
         width: 250px;
         margin: 21px auto;
     }
-    .footer-send a{
+
+    .footer-send a {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer-send{
+
+    .footer-send {
         margin-bottom: -150px;
     }
-    .footer-logo{
+
+    .footer-logo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer-info .footer-logo img{
+
+    .footer-info .footer-logo img {
         margin-top: 0px;
     }
 }

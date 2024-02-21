@@ -6,25 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEWA Nepal</title>
   <link rel="icon" type="image/x-icon" href="./Assets/img/hero/favicon-32x32.png">
-  
-  <!-- slick-slider -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- swiper-slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Bootstrap CSS link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  
+
   <!-- css link -->
   <link rel="stylesheet" href="./Assets/css/app.css">
-  
+
 </head>
 
 <body>
   <header class="header" id="header">
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container-fluid p-0">
-        <a class="navbar-brand" href="/"><img src="./Assets/img/common/logo.jpg" class="logo" width="150" height="102" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="./Assets/img/common/logo.jpg" class="logo" width="150" height="102"
+            alt=""></a>
         <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -140,7 +140,7 @@
           </div>
         </div>
         <div class="about-block">
-          <div class="heading container">
+          <div class="heading">
             <p>why women empowerment in nepal?</p>
           </div>
 
@@ -232,6 +232,7 @@
         </div>
       </div>
     </section>
+
     <section class="banner-second">
       <div class="container">
         <div class="bg-img">
@@ -250,140 +251,149 @@
         </div>
       </div>
     </section>
+
     <section class="gallery container">
       <h2 class="page-title">Gallery</h2>
 
-      <div class="slider">
-        <div class="slide">
-          <img src="./Assets/img/gallery/one.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="./Assets/img/gallery/two.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="./Assets/img/gallery/three.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="./Assets/img/gallery/four.jpg" alt="">
-        </div> 
-        <div class="slide">
-          <img src="./Assets/img/gallery/five.jpg"  alt="">
-        </div>
-        <div class="slide">
-          <img src="./Assets/img/gallery/six.jpg" alt="">
+      <div class="slider-block">
+        <div class="slider-container">
+          <div class="gallery-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./Assets/img/gallery/one.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./Assets/img/gallery/two.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./Assets/img/gallery/three.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./Assets/img/gallery/four.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./Assets/img/gallery/five.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./Assets/img/gallery/six.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+          </div>
+          <div class="swiper-prev">
+            <img src="./Assets/img/gallery/prev.png" alt="prev">
+          </div>
+          <div class="swiper-next">
+            <img src="./Assets/img/gallery/next.png" alt="next">
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer" id="footer">
-      <div class="container-lg">
-        <div class="footer-form">
-          <p class="contact">Contact us</p>
-          <div class="footer-name-email">
-            <div class="form-input">
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-            </div>
-            <div class="form-input">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-            </div>
+    <div class="container-lg">
+      <div class="footer-form">
+        <p class="contact">Contact us</p>
+        <div class="footer-name-email">
+          <div class="form-input">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
           </div>
-          <div class="footer-message">
-            <div class="form-input">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
-            </div>
-            <div class="footer-send">
-                <a href="#" class="btn-primary">SEND</a>
-            </div>
+          <div class="form-input">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
           </div>
         </div>
-        <div class="footer-info">
-            <div class="footer-logo">
-              <img src="./Assets/img/common/logo.jpg" alt="">
-            </div>
-            <div class="footer-contact">
-              <p class="contact">Contact</p>
-            </div>
-            <div class="contact-details">
-              <div class="contact-phone details">
-                <img src="./Assets/img/footer/Phone.png" alt="">
-                <p class="phone-no">01-41323232</p>
-              </div>
-              <div class="contact-email details">
-                <img src="./Assets/img/footer/Email.png" alt="">
-                <p class="phone-no">nepalsewa@gmail.com</p>
-              </div>
-              <div class="contact-address details">
-                <img src="./Assets/img/footer/Address.png" alt="">
-                <p class="phone-no">City, District, State</p>
-              </div>
-              <div class="footer-socials">
-                <a href="#"><img src="./Assets/img/footer/Facebook.png" alt=""></a>
-                <a href="#"><img src="./Assets/img/footer/LinkedIn.png" alt=""></a>
-                <a href="#"><img src="./Assets/img/footer/Instagram.png" alt=""></a>
-              </div>
-            </div>
-        </div>
-        <div class="footer-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0013279063737!2d85.32138557457692!3d27.717245276176836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d236a135d7%3A0x72ab40562f28c6d!2sSEWA%20Nepal!5e0!3m2!1sen!2snp!4v1708247797082!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer-message">
+          <div class="form-input">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
+          </div>
+          <div class="footer-send">
+            <a href="#" class="btn-primary">SEND</a>
+          </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <p>Copyright &copy 2024 SEWA Nepal</p>
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="./Assets/img/common/logo.jpg" alt="">
+        </div>
+        <div class="footer-contact">
+          <p class="contact">Contact</p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-phone details">
+            <img src="./Assets/img/footer/Phone.png" alt="">
+            <p class="phone-no">01-41323232</p>
+          </div>
+          <div class="contact-email details">
+            <img src="./Assets/img/footer/Email.png" alt="">
+            <p class="phone-no">nepalsewa@gmail.com</p>
+          </div>
+          <div class="contact-address details">
+            <img src="./Assets/img/footer/Address.png" alt="">
+            <p class="phone-no">City, District, State</p>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><img src="./Assets/img/footer/Facebook.png" alt=""></a>
+            <a href="#"><img src="./Assets/img/footer/LinkedIn.png" alt=""></a>
+            <a href="#"><img src="./Assets/img/footer/Instagram.png" alt=""></a>
+          </div>
+        </div>
       </div>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0013279063737!2d85.32138557457692!3d27.717245276176836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d236a135d7%3A0x72ab40562f28c6d!2sSEWA%20Nepal!5e0!3m2!1sen!2snp!4v1708247797082!5m2!1sen!2snp"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright &copy 2024 SEWA Nepal</p>
+    </div>
   </footer>
 
   <!-- jquery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <!-- Bootstrap Script link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-  
-  
 
   <!-- Javascript -->
   <script src="./Assets/js/app.js"></script>
   <script>
-   $('.slider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
+    const swiper = new Swiper(".gallery-slider", {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-prev',
+        prevEl: '.swiper-next',
+      },
+
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+
+        992: {
+          slidesPerView: 3
+        }
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-				
+    })
 
   </script>
 </body>
