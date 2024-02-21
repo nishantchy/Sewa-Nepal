@@ -6,10 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEWA Nepal</title>
   <link rel="icon" type="image/x-icon" href="./Assets/img/hero/favicon-32x32.png">
+  
+  <!-- slick-slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  
+  <!-- css link -->
   <link rel="stylesheet" href="./Assets/css/app.css">
-  <!-- Bootstrap CSS link -->
+  
 </head>
 
 <body>
@@ -43,7 +51,7 @@
               </li>
               <div class="donate">
                 <img src="./Assets/img/hero/Heart.svg" alt="">
-                <button class="btn-primary donate-btn">Donate</button>
+                <button class="donate-btn">Donate</button>
               </div>
             </ul>
           </div>
@@ -224,7 +232,48 @@
         </div>
       </div>
     </section>
+    <section class="banner-second">
+      <div class="container">
+        <div class="bg-img">
+          <!-- <img src="./Assets/banner.jpg" alt=""> 
+          this image file is given in css file -->
+        </div>
+        <div class="banner-content">
+          <!-- <img src="./Assets/Rectangle 35.svg" alt=""> -->
+          <div class="banner-content-desc">
+            <div class="banner-header-second">
+              <p class="banner-head-second">TAKE A JOURNEY <br> WITH US</p>
+              <p class="banner-para-second">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn-primary banner-btn">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery container">
+      <h2 class="page-title">Gallery</h2>
 
+      <div class="slider">
+        <div class="slide">
+          <img src="./Assets/img/gallery/one.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./Assets/img/gallery/two.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./Assets/img/gallery/three.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./Assets/img/gallery/four.jpg" alt="">
+        </div> 
+        <div class="slide">
+          <img src="./Assets/img/gallery/five.jpg"  alt="">
+        </div>
+        <div class="slide">
+          <img src="./Assets/img/gallery/six.jpg" alt="">
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer" id="footer">
@@ -283,13 +332,60 @@
         <p>Copyright &copy 2024 SEWA Nepal</p>
       </div>
   </footer>
+
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Bootstrap Script link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+  
+  
+
   <!-- Javascript -->
   <script src="./Assets/js/app.js"></script>
+  <script>
+   $('.slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+				
+
+  </script>
 </body>
 
 </html>

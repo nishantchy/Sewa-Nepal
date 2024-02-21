@@ -48,6 +48,10 @@
         -webkit-box-orient: vertical;  
         overflow: hidden;
     }
+
+.page-title{
+    padding-bottom: 60px;   
+ }
     @media(max-width:768px){
         .events-ttl{
             text-align: center;
