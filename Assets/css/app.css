@@ -298,6 +298,12 @@ ul {
     line-height: 47px;
   }
 }
+@media (max-width: 991px) {
+  .content h1 {
+    font-size: 53px;
+    line-height: 66px;
+  }
+}
 
 .join-form {
   background: rgba(102, 35, 130, 0.7);
@@ -314,6 +320,11 @@ ul {
   height: 48px;
   border-radius: 0;
 }
+@media (max-width: 991px) {
+  .join-form input {
+    height: 38px;
+  }
+}
 
 .message p {
   color: #fff;
@@ -329,6 +340,12 @@ ul {
   .message p {
     font-size: 21px;
     line-height: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .message p {
+    font-size: 28px;
+    line-height: 37px;
   }
 }
 
@@ -437,6 +454,13 @@ ul {
     letter-spacing: -0.02px;
   }
 }
+@media (max-width: 991px) {
+  .about-message p {
+    font-size: 15px;
+    line-height: 31px;
+    letter-spacing: -0.02px;
+  }
+}
 
 .heading p {
   text-transform: uppercase;
@@ -451,6 +475,12 @@ ul {
   .heading p {
     font-size: 26px;
     line-height: 36px;
+  }
+}
+@media (max-width: 991px) {
+  .heading p {
+    font-size: 39px;
+    line-height: 55px;
   }
 }
 
@@ -497,6 +527,12 @@ ul {
     line-height: 27px;
   }
 }
+@media (max-width: 991px) {
+  .about-topic {
+    font-size: 27px;
+    line-height: 36px;
+  }
+}
 
 .about-desc {
   font-size: 18px;
@@ -507,6 +543,12 @@ ul {
   .about-desc {
     font-size: 13px;
     line-height: 21px;
+  }
+}
+@media (max-width: 991px) {
+  .about-desc {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
 
@@ -526,6 +568,12 @@ ul {
   .btn-primary {
     font-size: 14px;
     padding: 12px 9px;
+  }
+}
+@media (max-width: 991px) {
+  .btn-primary {
+    font-size: 17px;
+    padding: 10px 10px;
   }
 }
 .btn-primary:hover {
@@ -578,6 +626,12 @@ ul {
     content: none;
   }
 }
+@media (max-width: 991px) {
+  .banner::after {
+    width: calc(42% + 420px);
+    left: -230px;
+  }
+}
 
 .banner-head {
   text-transform: uppercase;
@@ -594,6 +648,12 @@ ul {
     font-size: 28px;
   }
 }
+@media (max-width: 991px) {
+  .banner-head {
+    font-size: 34px;
+    line-height: 48px;
+  }
+}
 
 .banner-para {
   font-size: 23px;
@@ -606,6 +666,12 @@ ul {
     color: #fff;
     font-size: 16px;
     line-height: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-para {
+    font-size: 17px;
+    letter-spacing: -0.52px;
   }
 }
 
@@ -642,6 +708,12 @@ ul {
     line-height: 23px;
   }
 }
+@media (max-width: 991px) {
+  .events-date {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
 .events-img {
   margin-top: 22px;
 }
@@ -660,6 +732,12 @@ ul {
     font-size: 21px;
   }
 }
+@media (max-width: 991px) {
+  .events-ttl {
+    line-height: 30px;
+    font-size: 20px;
+  }
+}
 .events-txt {
   font-size: 20px;
   font-weight: 400;
@@ -675,6 +753,12 @@ ul {
     line-height: 24px;
   }
 }
+@media (max-width: 991px) {
+  .events-txt {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 
 .container-lg {
   max-width: 1326px;
@@ -682,6 +766,12 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 78px;
+}
+@media (max-width: 991px) {
+  .container-lg {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .footer {
@@ -706,6 +796,11 @@ ul {
   margin: auto;
   font-size: 16px;
   box-shadow: 1px 1px 0.8px 0.2px;
+}
+@media (max-width: 767px) {
+  .footer-name-email input {
+    width: 330px;
+  }
 }
 .footer-message textarea {
   width: 521px;
@@ -781,7 +876,7 @@ ul {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container-lg {
     flex-direction: column;
     flex-wrap: wrap;
@@ -810,7 +905,7 @@ ul {
     flex-direction: column;
   }
   .footer-message textarea {
-    width: 250px;
+    width: 330px;
     margin: 21px auto;
   }
   .footer-send a {
@@ -869,6 +964,11 @@ ul {
     content: none;
   }
 }
+@media (max-width: 991px) {
+  .banner-second::after {
+    width: calc(50% + 150px);
+  }
+}
 
 .banner-head-second {
   text-transform: uppercase;
@@ -882,6 +982,12 @@ ul {
     color: #fff;
     line-height: 38px;
     font-size: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-head-second {
+    font-size: 34px;
+    line-height: 48px;
   }
 }
 
@@ -898,11 +1004,27 @@ ul {
     line-height: 22px;
   }
 }
+@media (max-width: 991px) {
+  .banner-para-second {
+    font-size: 17px;
+    letter-spacing: -0.52px;
+  }
+}
 
 .banner-header-second {
   max-width: 500px;
   margin-left: auto;
   text-align: start;
+}
+@media (max-width: 991px) {
+  .banner-header-second {
+    margin-left: 389px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-header-second {
+    margin-left: 0px;
+  }
 }
 
 .slider-container {

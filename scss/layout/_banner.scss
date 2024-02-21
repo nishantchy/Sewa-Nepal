@@ -36,6 +36,10 @@
     @media (max-width:767px) {
         content: none;
     }
+    @media (max-width:991px) {
+        width: calc(42% + 420px);
+        left: -230px;
+    }
 }
 
 .banner-head {
@@ -51,6 +55,10 @@
         line-height: 38px;
         font-size: 28px;
     }
+    @media (max-width:991px){
+        font-size: 34px;
+        line-height: 48px;
+    }
 }
 
 .banner-para {
@@ -63,5 +71,9 @@
         color: #fff;
         font-size: 16px;
         line-height: 22px;
+    }
+    @media (max-width:991px){
+        font-size: 17px;
+        letter-spacing: -0.52px;
     }
 }

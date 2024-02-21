@@ -35,6 +35,10 @@
     @media (max-width:767px) {
         content: none;
     }
+    @media (max-width:991px) {
+        width: calc(50% + 150px);
+        // right: -89px;
+    }
 }
 
 .banner-head-second {
@@ -50,6 +54,10 @@
         line-height: 38px;
         font-size: 28px;
     }
+    @media (max-width:991px){
+        font-size: 34px;
+        line-height: 48px;
+    }
 }
 
 .banner-para-second {
@@ -64,12 +72,24 @@
         font-size: 16px;
         line-height: 22px;
     }
+    @media (max-width:991px){
+        font-size: 17px;
+        letter-spacing: -0.52px;
+    }
 }
 
 .banner-header-second {
     max-width: 500px;
     margin-left: auto;
     text-align: start;
+
+    
+    @media (max-width:991px){
+        margin-left: 389px;
+    }
+    @media (max-width:767px){
+        margin-left: 0px;
+    }
 }
 
 .slider-container {

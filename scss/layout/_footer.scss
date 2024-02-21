@@ -4,6 +4,11 @@
     justify-content: center;
     align-items: center;
     gap: 78px;
+
+    @media (max-width:991px){
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 .footer {
@@ -31,7 +36,12 @@
             margin: auto;
             font-size: 16px;
             box-shadow: 1px 1px 0.8px 0.2px;
+
+            @media (max-width:767px){
+                width: 330px;
+            }
         }
+        
 
     }
 
@@ -117,7 +127,7 @@
 }
 
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .container-lg {
         flex-direction: column;
         flex-wrap: wrap;
@@ -153,9 +163,10 @@
     }
 
     .footer-message textarea {
-        width: 250px;
+        width: 330px;
         margin: 21px auto;
     }
+
 
     .footer-send a {
         display: flex;
