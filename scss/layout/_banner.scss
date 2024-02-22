@@ -5,7 +5,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 60px 0;
+    padding: 90px 0;
+
+    @media (max-width:767px) {
+        padding: 60px 0;
+    }
+
     z-index: 1;
 }
 
@@ -24,7 +29,7 @@
     display: block;
     background-image: url("../../Assets/img/banner/banner-rect.svg");
     background-position: top right;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     width: calc(50% + 170px);
@@ -36,9 +41,11 @@
     @media (max-width:767px) {
         content: none;
     }
+
     @media (max-width:991px) {
         width: calc(42% + 420px);
         left: -230px;
+        background-size: 100% 100%;
     }
 }
 
@@ -55,7 +62,8 @@
         line-height: 38px;
         font-size: 28px;
     }
-    @media (max-width:991px){
+
+    @media (max-width:991px) {
         font-size: 34px;
         line-height: 48px;
     }
@@ -72,7 +80,8 @@
         font-size: 16px;
         line-height: 22px;
     }
-    @media (max-width:991px){
+
+    @media (max-width:991px) {
         font-size: 17px;
         letter-spacing: -0.52px;
     }

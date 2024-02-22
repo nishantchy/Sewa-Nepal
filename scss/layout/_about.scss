@@ -68,6 +68,7 @@
         line-height: 21px;
         letter-spacing: -0.02px;
     }
+
     @media (max-width:991px) {
         font-size: 15px;
         line-height: 31px;
@@ -88,6 +89,7 @@
         font-size: 26px;
         line-height: 36px;
     }
+
     @media (max-width:991px) {
         font-size: 39px;
         line-height: 55px;
@@ -134,6 +136,7 @@
         font-size: 24px;
         line-height: 27px;
     }
+
     @media (max-width:991px) {
         font-size: 27px;
         line-height: 36px;
@@ -149,6 +152,7 @@
         font-size: 13px;
         line-height: 21px;
     }
+
     @media (max-width:991px) {
         font-size: 14px;
         line-height: 25px;
@@ -171,10 +175,12 @@
         font-size: 14px;
         padding: 12px 9px;
     }
-    @media (max-width:991px){
+
+    @media (max-width:991px) {
         font-size: 17px;
         padding: 10px 10px;
     }
+
     &:hover {
         background: #fff;
         color: #329f5b;
@@ -182,6 +188,42 @@
 }
 
 .btn-learn-more {
-    padding-bottom: 68px;
     padding-top: 18px;
+}
+
+.about {
+    &-row {
+        max-width: 1182px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+        }
+    }
+
+    &-img {
+        max-width: 730px;
+    }
+
+    &-why-content {
+        max-width: 674px;
+        background: rgba(255, 255, 255, 0.70);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 180px;
+        margin-left: -222px;
+        padding: 56px 44px 68px;
+
+        @media (max-width:767px) {
+            padding: 30px 39px 45px;
+            margin-top: -41px;
+            margin-left: 12px;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            margin-top: 298px;
+            margin-left: -402px;
+        }
+    }
 }
