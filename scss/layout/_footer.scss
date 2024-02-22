@@ -8,6 +8,12 @@
     @media (max-width:991px){
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+.footer-name-email{
+    @media (max-width: 1199px){
+        flex-direction: column;
     }
 }
 
@@ -22,6 +28,10 @@
             color: #fff;
             margin-bottom: 39px;
             padding-top: 129px;
+
+            @media (max-width: 991px){
+                padding-top: 30px;
+            }
         }
     }
 
@@ -37,6 +47,10 @@
             font-size: 16px;
             box-shadow: 1px 1px 0.8px 0.2px;
 
+            
+            @media (max-width: 991px){
+                width: 350px;
+            }
             @media (max-width:767px){
                 width: 330px;
             }
@@ -52,11 +66,21 @@
             margin: 42px auto;
             font-size: 16px;
             box-shadow: 1px 1px 0.8px 0.2px;
+
+            @media (max-width: 1199px){
+                width: 250px;
+            }
+           
+            @media (max-width: 991px){
+                width: 350px;
+                margin: 20px auto;
+            }
+           
         }
     }
 
     &-send {
-        padding-bottom: 95px;
+        // padding-bottom: 95px;
     }
 }
 
@@ -64,6 +88,10 @@
     width: 218px;
     height: 151px;
     margin-top: 50px;
+
+    @media (max-width:991px){
+        margin-top: 0;
+    }
 }
 
 .contact-details {
@@ -105,6 +133,10 @@
     width: 40px;
     gap: 15px;
     margin-bottom: 70px;
+
+    @media (max-width:991px){
+        margin-bottom: 0px;
+    }
 }
 
 .footer-map {
@@ -166,6 +198,10 @@
         width: 330px;
         margin: 21px auto;
     }
+    .footer-message input {
+        width: 330px;
+        margin: 21px auto;
+    }
 
 
     .footer-send a {
@@ -175,7 +211,11 @@
     }
 
     .footer-send {
-        margin-bottom: -150px;
+        // margin-bottom: -150px;
+
+        @media (max-width: 991px){
+            padding-bottom: 0px;
+        }
     }
 
     .footer-logo {
