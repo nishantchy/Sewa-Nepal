@@ -82,7 +82,7 @@
     font-size: 46px;
     font-weight: 500;
     line-height: 69px;
-    text-align: center;
+    // text-align: center;
     margin-bottom: 60px;
 
     @media (max-width:767px) {
@@ -102,7 +102,7 @@
     height: 5px;
     display: block;
     background: #329f5b;
-    margin: 5px auto 0px;
+    // margin: 5px auto 0px;
 
     @media (max-width:767px) {
         width: 50px;
@@ -197,11 +197,15 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-
+        margin-bottom: 60px;
+        &:last-child{
+            margin-bottom: 0;
+        }
         @media (min-width:768px) {
             flex-direction: row;
         }
     }
+    
 
     &-img {
         max-width: 730px;
