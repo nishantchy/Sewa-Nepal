@@ -20,5 +20,33 @@ const checkBoxes = () =>{
 window.addEventListener("scroll",checkBoxes);
 checkBoxes();
 
+// gallery
+document.addEventListener("click", function (e){
+    if(e.target.classList.contains("gallery-item")){
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+        myModal.show();
+    }
+})
 
+const viewBtn = document.getElementById('viewMore');
+const viewShow = document.getElementById('view-more');
 
+function show(){
+    viewShow.style.display= "block";
+}
+function hide(){
+    viewShow.style.display = "none";
+}
+viewBtn.onclick = () => {
+    if(viewBtn.innerText === 'View More'){
+        viewBtn.innerText = 'View Less';
+        show();
+    }
+    else{
+        viewBtn.innerText = 'View More';
+        hide();
+    }
+}
+   
