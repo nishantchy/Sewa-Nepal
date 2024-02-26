@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Sewa Nepal</title>
+  <title>About | Sewa Nepal</title>
   <link rel="icon" type="image/x-icon" href="../Assets/img/hero/favicon-32x32.png">
 
   <!-- Bootstrap CSS link -->
@@ -31,9 +31,23 @@
         </div>
         <div class="collapse navbar-collapse links" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active p-0" aria-current="page" href="../about/index.html">About</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-center" href="../about/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../faq/index.html">FAQs</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../objectives/index.html">Objectives</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../mission-vision/index.html">Mission and Vision</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../location/index.html">Our Locations</a></li>
+              </ul>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active p-0" aria-current="page" href="../about/index.html">About</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link active p-0" aria-current="page" href="../blogs/index.html">Blogs</a>
             </li>
@@ -59,62 +73,34 @@
     </nav>
   </header>
 <main class="main" id="main">
-    <section>
-        <div class="bg-img-section">
-          <div class="display-msg">
-            <h1>Gallery</h1>
-          </div>
-        </div>
-      </section>
-<section class="gallery">
-    <div class="container-lg">
-        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-            <div class="col">
-                <img src="../Assets/img/gallery/one.jpg" alt="" class="gallery-item">
-            </div>
-            <div class="col">
-                <img src="../Assets/img/gallery/two.jpg" alt="" class="gallery-item">
-            </div>
-            <div class="col">
-                <img src="../Assets/img/gallery/three.jpg" alt="" class="gallery-item">
-            </div>
-            <div class="col">
-                <img src="../Assets/img/gallery/four.jpg" alt="" class="gallery-item">
-            </div>
-            <div class="col">
-                <img src="../Assets/img/gallery/five.jpg" alt="" class="gallery-item">
-            </div>
-            <div class="col">
-                <img src="../Assets/img/gallery/six.jpg" alt="" class="gallery-item">
-            </div>
-            <div class="col">
-                    <img src="../Assets/img/gallery/seven.png" alt="" class="gallery-item">
-                </div>
-            <div class="col">
-                    <img src="../Assets/img/gallery/eight.jpg" alt="" class="gallery-item">
-                </div>
-            <div class="col">
-                    <img src="../Assets/img/gallery/nine.jpg" alt="" class="gallery-item">
-            </div>
-
-        </div>
-    </div>
-
-</section>  
-  <!-- Modal -->
-  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../Assets/img/gallery/one.jpg" class="modal-img" alt="">
-        </div>
-      </div>
-    </div>
+  <!-- setting background img -->
+<section>
+  <div class="bg-img-section">
+    <!-- <div class="display-msg">
+      <h1>About Us</h1>
+    </div> -->
   </div>
+</section>
+<!-- Objectives -->
+<section class="container">
+    <div class="objectives">
+      <p class="page-title objectives-title">Our Objectives</p>
+     <ul class="objectives-list">
+      <li>To improve rural livelihood and economic prosperity by strengthening the capacity of primary women cooperatives.
+        <li>Advocacy to increase participation of social entrepreneurs in policy making process  in all levels of government (Local, province and federal)
+        </li>  
+        <li>To increase access to education, health, nutrition, insurance, input supply, market and access to finance through the women empowerment social capital development, social transformation and awareness raising.
+        </li> 
+        <li>To facilitate producer for consumer friendly quality production, processing and marketing of Agriculture-livestock products.
+        </li>
+        <li>Develop leadership of women involve in agriculture and livestock business by forming group and networks to develop social entrepreneurship and improve livelihood  
+        </li>
+     </ul>
+    </div>
+  </section>
+
+
+
 </main>
 <!-- footer -->
 
@@ -149,8 +135,7 @@
     <p>Copyright &copy 2024 SEWA Nepal</p>
   </div>
 </footer>
-
- 
+  
 
 
   <!-- Bootstrap Script link -->
@@ -165,3 +150,4 @@
 </body>
 
 </html>
+

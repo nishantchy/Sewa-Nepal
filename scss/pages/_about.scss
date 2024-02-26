@@ -57,6 +57,15 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.static-img-2{
+    height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(../../Assets/img/hero/hero-img3.jpg);
+    background-position: center;
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
  
 // .objectives-title{
 //     padding-top: 40px;
@@ -134,4 +143,31 @@ tr:hover {
 .map-nepal iframe{
     width: 100%;
     height: 200px;
+}
+
+// FAQS
+.accordion-body{
+    font-size: 15px;
+    font-family: 'poppins';
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02px;
+}
+
+.mission-list li{
+    list-style: circle;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 400;
+    line-height: 36px;
+    color: #333;
+
+    @media (max-width: 767px){
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+.mission-vision{
+    padding: 40px 0px;
 }

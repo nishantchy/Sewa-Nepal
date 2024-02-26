@@ -1,0 +1,79 @@
+
+.contact-form {
+    text-align: center;
+    // position: absolute;
+    // top: 20%;
+    width: 100%;
+    // color: #fff;
+    z-index: 1;
+    padding-top: 28px;
+    padding-bottom: 22px;
+    h1 {
+        font-family: 'Oswald';
+        font-size: 68px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 102px;
+        text-transform: uppercase;
+    
+        @media (max-width:767px) {
+            font-size: 35px;
+            line-height: 47px;
+        }
+        @media (max-width:991px) {
+            font-size: 53px;
+            line-height: 66px;
+        }
+    }
+}
+.contact-input-form {
+    max-width: 400px;
+
+    label{
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'poppins';
+        line-height: 28px;
+    }
+    input{
+        border-radius: 0;
+    }
+    textarea {
+        border-radius: 0;
+    }
+    .contact-btn{
+        button{
+            padding: 10px 155px 10px 155px;
+        }
+    }
+}
+
+.contact-title {
+    text-transform: uppercase;
+    font-family: 'oswald';
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 69px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media (max-width:767px) {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 25px;
+    }
+
+    &::after {
+        content: "";
+        height: 5px;
+        display: block;
+        background: #329f5b;
+        width: 100px;
+        margin-top: 5px;
+        margin: auto;
+
+        @media (max-width:767px) {
+            width: 50px;
+        }
+    }
+}
