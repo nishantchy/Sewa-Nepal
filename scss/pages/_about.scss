@@ -49,19 +49,19 @@
 }
 
 .static-img{
-    height: 30vh;
+    height: 20vh;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(../../Assets/img/hero/hero-img2.jpg);
     background-position: center;
-    padding: 100px;
+    padding: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .static-img-2{
-    height: 30vh;
+    height: 20vh;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(../../Assets/img/hero/hero-img3.jpg);
     background-position: center;
-    padding: 100px;
+    padding: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -85,7 +85,7 @@
     }
 }
 .objectives{
-    padding: 40px 0px;
+    padding: 10px 0px;
 }
 .paragraph {
     // text-align: center;
@@ -110,7 +110,7 @@
     }
 }
 .introduction{
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 // working area table css
@@ -134,7 +134,7 @@ tr:hover {
     background-color: #f2f2f2;
 }
 .working-area{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .map-nepal{
@@ -169,5 +169,5 @@ tr:hover {
     }
 }
 .mission-vision{
-    padding: 40px 0px;
+    padding: 10px 0px;
 }

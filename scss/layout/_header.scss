@@ -24,6 +24,12 @@
         .nav-item a {
             color: #333;
         }
+        .lang-header a{
+            color: #333;
+        }
+        .lang-header {
+            color: #333;
+        }
 
 
     }
@@ -90,5 +96,46 @@ ul {
     @media (min-width:992px) {
         flex-basis: 0;
         flex-grow: unset;
+    }
+}
+
+.lang-header {
+    width: 100%;
+    color: #fff;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.language-selector {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.language-selector a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.language-selector a img {
+    width: 20px; 
+    height: auto; 
+    margin-right: 5px; 
+    margin-top: -7px;
+}
+
+.language-selector a .nepal-flag{
+    width: 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .lang-header {
+        text-align: center;
+    }
+
+    .language-selector {
+        display: block;
+        margin: 0 auto;
     }
 }

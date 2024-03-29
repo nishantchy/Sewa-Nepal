@@ -1,10 +1,40 @@
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-.gallery{
-    padding: 80px 0;
+.gallery {
+  padding-top: 160px;
 }
-#gallery-modal .modal-img{
-    width: 100%;
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
+.gallery-title {
+  text-transform: uppercase;
+  font-family: "oswald";
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 69px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 25px;
+  }
+
+  &::after {
+    content: "";
+    height: 5px;
+    display: block;
+    background: #329f5b;
+    width: 100px;
+    margin-top: 5px;
+    margin: auto;
+
+    @media (max-width: 767px) {
+      width: 50px;
+    }
+  }
 }

@@ -1,52 +1,33 @@
-window.addEventListener("scroll" , () => {
-    const header = document.getElementById("header");
-    
-    if (window.scrollY > 400) {
-        header.classList.add("header-bg")
-    } else {
-        header.classList.remove("header-bg")
-    }
-})
+window.addEventListener("scroll", () => {
+  const header = document.getElementById("header");
+
+  if (window.scrollY > 400) {
+    header.classList.add("header-bg");
+  } else {
+    header.classList.remove("header-bg");
+  }
+});
 
 const boxes = document.querySelectorAll(".content");
-const checkBoxes = () =>{
-    const triggerBottom = (window.innerHeight/5)*4;
-    boxes.forEach((box)=> {
-        const boxTop = box.getBoundingClientRect().top;
-        if(boxTop < triggerBottom)box.classList.add("show");
-        else box.classList.remove("show");
-    })
-}
-window.addEventListener("scroll",checkBoxes);
+const checkBoxes = () => {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) box.classList.add("show");
+    else box.classList.remove("show");
+  });
+};
+window.addEventListener("scroll", checkBoxes);
 checkBoxes();
 
 // gallery
-document.addEventListener("click", function (e){
-    if(e.target.classList.contains("gallery-item")){
-        const src = e.target.getAttribute("src");
-        document.querySelector(".modal-img").src = src;
-        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
-        myModal.show();
-    }
-})
-
-const viewBtn = document.getElementById('viewMore');
-const viewShow = document.getElementById('view-more');
-
-function show(){
-    viewShow.style.display= "block";
-}
-function hide(){
-    viewShow.style.display = "none";
-}
-viewBtn.onclick = () => {
-    if(viewBtn.innerText === 'View More'){
-        viewBtn.innerText = 'View Less';
-        show();
-    }
-    else{
-        viewBtn.innerText = 'View More';
-        hide();
-    }
-}
-   
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("gallery-item")) {
+    const src = e.target.getAttribute("src");
+    document.querySelector(".modal-img").src = src;
+    const myModal = new bootstrap.Modal(
+      document.getElementById("gallery-modal")
+    );
+    myModal.show();
+  }
+});

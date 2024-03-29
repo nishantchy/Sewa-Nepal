@@ -199,6 +199,12 @@ p {
 .header.header-bg .nav-item a {
   color: #333;
 }
+.header.header-bg .lang-header a {
+  color: #333;
+}
+.header.header-bg .lang-header {
+  color: #333;
+}
 
 .header a img {
   width: 100%;
@@ -264,6 +270,45 @@ ul {
   }
 }
 
+.lang-header {
+  width: 100%;
+  color: #fff;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.language-selector {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.language-selector a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.language-selector a img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+  margin-top: -7px;
+}
+
+.language-selector a .nepal-flag {
+  width: 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .lang-header {
+    text-align: center;
+  }
+  .language-selector {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .carousel-content .carousel-item {
   height: 100vh;
 }
@@ -439,7 +484,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 @media (max-width: 767px) {
   .about-content {
@@ -1392,20 +1437,20 @@ ul {
 }
 
 .static-img {
-  height: 30vh;
+  height: 20vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../Assets/img/hero/hero-img2.jpg);
   background-position: center;
-  padding: 100px;
+  padding: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .static-img-2 {
-  height: 30vh;
+  height: 20vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../Assets/img/hero/hero-img3.jpg);
   background-position: center;
-  padding: 100px;
+  padding: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1428,7 +1473,7 @@ ul {
 }
 
 .objectives {
-  padding: 40px 0px;
+  padding: 10px 0px;
 }
 
 .paragraph {
@@ -1456,7 +1501,7 @@ ul {
 }
 
 .introduction {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 table {
@@ -1484,7 +1529,7 @@ tr:hover {
 }
 
 .working-area {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .map-nepal {
@@ -1521,7 +1566,7 @@ tr:hover {
 }
 
 .mission-vision {
-  padding: 40px 0px;
+  padding: 10px 0px;
 }
 
 img {
@@ -1529,11 +1574,42 @@ img {
 }
 
 .gallery {
-  padding: 80px 0;
+  padding-top: 160px;
 }
 
 #gallery-modal .modal-img {
   width: 100%;
+}
+
+.gallery-title {
+  text-transform: uppercase;
+  font-family: "oswald";
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 69px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .gallery-title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 25px;
+  }
+}
+.gallery-title::after {
+  content: "";
+  height: 5px;
+  display: block;
+  background: #329f5b;
+  width: 100px;
+  margin-top: 5px;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .gallery-title::after {
+    width: 50px;
+  }
 }
 
 .blog-image img {
@@ -1575,8 +1651,8 @@ img {
   font-weight: 400;
 }
 
-.blogs {
-  padding: 40px 0px 40px 0px;
+.section-blogs {
+  padding-top: 180px;
 }
 
 .heading .related-title {
@@ -1586,9 +1662,7 @@ img {
 .contact-form {
   text-align: center;
   width: 100%;
-  z-index: 1;
-  padding-top: 28px;
-  padding-bottom: 22px;
+  padding-top: 160px;
 }
 .contact-form h1 {
   font-family: "Oswald";
@@ -1611,22 +1685,27 @@ img {
   }
 }
 
-.contact-input-form {
-  max-width: 400px;
+.left-section .contact-input-form {
+  text-align: center;
 }
-.contact-input-form label {
-  font-size: 20px;
+.left-section .contact-input-form label {
+  font-size: 18px;
   font-weight: 500;
   font-family: "poppins";
   line-height: 28px;
 }
-.contact-input-form input {
-  border-radius: 0;
+.left-section .contact-input-form input {
+  border-radius: 5px;
+  background: #dedede;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.contact-input-form textarea {
-  border-radius: 0;
+.left-section .contact-input-form textarea {
+  border-radius: 5px;
+  background: #dedede;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.contact-input-form .contact-btn button {
+.left-section .contact-input-form .contact-btn button {
+  border-radius: 5px;
   padding: 10px 155px 10px 155px;
 }
 
@@ -1661,12 +1740,53 @@ img {
   }
 }
 
+.contact-logo-image img {
+  max-width: 350px;
+  width: 100%;
+  height: 250px;
+}
+
+.info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+.info img {
+  max-width: 30px;
+  width: 100%;
+  height: 30px;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 20px 0px 60px 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1199px) {
+  .contact-page {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-page {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+    flex-wrap: wrap-reverse;
+  }
+}
+
 .faqs {
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .working-area {
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .event-image img {
@@ -1709,5 +1829,10 @@ img {
 }
 
 .event {
-  padding: 40px 0px 40px 0px;
+  padding-top: 180px;
+}
+@media (max-width: 991px) {
+  .event {
+    padding-top: 150px;
+  }
 }/*# sourceMappingURL=app.css.map */
